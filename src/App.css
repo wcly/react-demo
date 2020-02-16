@@ -1,0 +1,12 @@
+.container{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.content{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    bottom: 0;
+}

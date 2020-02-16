@@ -1,0 +1,21 @@
+.navbar{
+    text-align: center;
+    border-bottom: 1px solid #f3f3f3;
+    box-shadow: 0px 2px 10px #ccc;
+    height: 60px;
+    line-height: 60px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #666;
+    line-height: 24px;
+    font-size: 24px;
+    margin: 0 20px;
+    display: inline-block;
+}
+
+.navbar a.active{
+    color: #009a61;
+    font-weight: bold;
+}
