@@ -1,0 +1,13 @@
+.page{
+    width: 2000px;
+    border: 2px solid;
+    margin: 0 auto;
+}
+
+.page1{
+    background-color: aquamarine;
+}
+
+.page2{
+    background-color: royalblue;
+}

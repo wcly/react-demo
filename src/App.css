@@ -1,0 +1,21 @@
+.nav{
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #008c8c;
+    padding: 20px;
+}
+
+.nav a{
+    color: #fff;
+    margin: 20px 0;
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav a.active{
+    color: brown;
+    font-weight: bold;
+}
