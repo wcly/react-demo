@@ -16,6 +16,7 @@ export default class RouteGuard extends PureComponent {
         this.action = ''
         this.unBlock = null
     }
+    
 
     /**
      * 路由阻塞回调
@@ -43,6 +44,8 @@ export default class RouteGuard extends PureComponent {
     handleConfirm = (msg, callback) => {
         if (this.props.onBeforeChange) {
             this.props.onBeforeChange(this.prevLocation, this.location, this.action, callback, this.unBlock)
+        }else{
+            callback(true)
         }
     }
 

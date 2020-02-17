@@ -15,17 +15,17 @@ class GuardHelper extends PureComponent {
     }
 
     componentDidMount() {
-        const { history, location, onBlock, onListen } = this.props
+        const { history, onBlock, onListen } = this.props
 
         // 添加阻塞
         this.unBlock = history.block((newLocation, action) => {
-            onBlock && onBlock(location, newLocation, action, this.unBlock)
+            onBlock && onBlock(this.props.location, newLocation, action, this.unBlock)
             return ""
         })
 
         //添加一个监听器
         this.unListen = history.listen((newLocation, action) => {
-            onListen && onListen(location, newLocation, action, this.unListen)
+            onListen && onListen(this.props.location, newLocation, action, this.unListen)
         })
     }
 
